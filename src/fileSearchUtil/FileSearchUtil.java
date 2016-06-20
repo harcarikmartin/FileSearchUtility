@@ -20,7 +20,7 @@ public class FileSearchUtil {
 				findAllFiles(file.getPath());
 			}
 		}
-		return list.toArray(new String[] {} );
+		return list.toArray(new String[] {});
 	}
 	
 	public String[] findAllDirectories(String path) throws FileNotFoundException {
@@ -34,7 +34,7 @@ public class FileSearchUtil {
 				findAllDirectories(file.getPath());
 			}
 		}
-		return list.toArray(new String[] {} );
+		return list.toArray(new String[] {});
 	}
 	
 	public String[] findAllFilesAndDirectories(String path) throws FileNotFoundException {
@@ -49,7 +49,7 @@ public class FileSearchUtil {
 				list.add(file.getAbsolutePath());
 			}
 		}
-		return list.toArray(new String[] {} );
+		return list.toArray(new String[] {});
 	}
 	
 	public String[] findFilesByPattern(String pattern, String path) throws FileNotFoundException {
@@ -63,7 +63,7 @@ public class FileSearchUtil {
 				findFilesByPattern(pattern, file.getPath());
 			}
 		}
-		return list.toArray(new String[] {} );
+		return list.toArray(new String[] {});
 	}
 	
 	public String[] findFilesByLastChange(Date date, String path) throws FileNotFoundException {
@@ -77,7 +77,7 @@ public class FileSearchUtil {
 				findFilesByLastChange(date, file.getPath());
 			}
 		}
-		return list.toArray(new String[] {} );
+		return list.toArray(new String[] {});
 	}
 	
 	private void isValidFile(File files) throws FileNotFoundException {
