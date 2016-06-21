@@ -1,6 +1,6 @@
 package filter;
 
-@FunctionalInterface
+//@FunctionalInterface
 public interface Filter {
 		
 	boolean accept();
